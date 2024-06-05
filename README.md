@@ -1,6 +1,3 @@
-# ArcGIS-Cellular-Automata-Script-Tool
-ArcGIS Cellular Automata Script Tool
-
 # Cellular Automata Model Script Tool for ArcGIS Pro
 
 This repository contains a Python script tool for ArcGIS Pro that implements a cellular automata model for land-use change. The tool can simulate the expansion or retraction of a specified land-use type based on neighborhood and suitability criteria.
@@ -22,7 +19,6 @@ The cellular automata model works by iteratively evaluating each cell in the inp
 
 Randomization is applied to select cells for conversion, ensuring that the model does not always prioritize cells in a specific order. This helps create more realistic and varied land-use change patterns.
 
-## Parameters
 
 ## Parameters
 
@@ -72,13 +68,6 @@ Randomization is applied to select cells for conversion, ensuring that the model
 ## Example
 
 An example land-use dataset and suitability raster are included in the repository. These datasets can be used to test the script tool and understand how the parameters affect the output.
-
-## Notes
-
-- The **constraint raster** is optional. If provided, cells with a value of `1` will not be affected by the model.
-- The **neighborhood type** allows for flexible modelling of different spatial influences on land-use change.
-- Ensure that the input rasters have the same coordinate system for accurate results.
-- The script ensures that the output raster retains the coordinate system of the input land-use raster.
 
 ## License
 
